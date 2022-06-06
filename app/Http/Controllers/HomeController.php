@@ -21,7 +21,12 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index1()
+    {
+        return redirect()->route('students.index');
+    }
+
+     public function save()
     {
         return redirect()->route('students.index');
     }
